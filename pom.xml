@@ -9,7 +9,7 @@
 		<repository>
 			<id>github</id>
 			<name>TheTwistingHaunt Entity Library</name>
-			<url>https://github.com/etarium/TTH_EntityLibrary.git</url>
+			<url>https://maven.pkg.github.com/etarium/TTH_EntityLibrary</url>
 		</repository>
 	</distributionManagement>
 	<dependencies>
