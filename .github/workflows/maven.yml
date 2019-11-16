@@ -17,10 +17,8 @@ jobs:
       run: mvn -B package --file pom.xml
     
     - name: Deploy to Github Package Registry
-      run: mvn deploy
-    
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1.0.0
-      with:
-        name: EntityLibrary
-        path: /
+      env:
+        #GITHUB_USERNAME: x-access-token
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run:
+        mvn --settings settings.xml deploy
