@@ -5,7 +5,13 @@
 	<artifactId>TTH_EntityLibrary</artifactId>
 	<version>0.01</version>
 	<description>POJO library for the twisting haunt</description>
-
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>TheTwistingHaunt Entity Library</name>
+			<url>https://maven.pkg.github.com/etarium/TTH_EntityLibrary</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
