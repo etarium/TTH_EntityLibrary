@@ -12,7 +12,7 @@ public class Ability {
 	String description;
 	Attribute attribute;
 	AbilityType type;
-	Statblock stats;
+	Statblock stats = new Statblock();
 	int hpCost;
 	int spCost;
 	int duration;

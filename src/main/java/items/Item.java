@@ -12,7 +12,7 @@ public class Item {
 	ItemType type;
 	String description;
 	String usedDescription;
-	Statblock stats;
+	Statblock stats = new Statblock();
 	int minLevel;
 	
 	public String getName() {

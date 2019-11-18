@@ -1,5 +1,6 @@
 package items;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import enums.Attribute;
@@ -9,7 +10,7 @@ import items.enums.WeaponType;
 public class WeaponItem extends Item {
 	Attribute attribute;
 	WeaponType weaponType;
-	List<WeaponHand> weaponHand;
+	List<WeaponHand> weaponHand = new ArrayList<WeaponHand>();
 	int numOfHands;
 	
 	public Attribute getAttribute() {
