@@ -12,16 +12,16 @@ import items.Item;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Cell {
 	
-	Location location;
+	Location location = new Location(0,0,0);
 	Instance instance;
 	String description;
 	String terrain;
-	List<InspectableObjects> inspectableObjects;
-	List<Item> items;
-	List<Entity> npcs;
+	List<InspectableObjects> inspectableObjects = new ArrayList<InspectableObjects>();
+	List<Item> items = new ArrayList<Item>();
+	List<Entity> npcs = new ArrayList<Entity>();
 	List<EnemyEntity> enemies = new ArrayList<EnemyEntity>();
 	boolean isLocked;
-	List<Item> requiredItems; //used for places that require certain triggers to be able to enter, locked doors, etc
+	List<Item> requiredItems = new ArrayList<Item>(); //used for places that require certain triggers to be able to enter, locked doors, etc
 	boolean north;
 	boolean south;
 	boolean east;
