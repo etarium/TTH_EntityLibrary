@@ -18,7 +18,7 @@ public class Entity {
 	Temperament temperament;
 	SpeciesEnum species;
 	List<Item> inventory = new ArrayList<Item>();
-	Statblock stats;
+	Statblock stats = new Statblock();;
 	int level;
 	
 	public String getName() {

@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,9 +16,9 @@ import items.enums.WeaponType;
 public class EntityClassObject {
 	EntityClassEnum name;
 	String description;
-	List<ArmorMaterial> armorType;
-	List<WeaponType> weaponType;
-	List<Ability> skills;
+	List<ArmorMaterial> armorType = new ArrayList<ArmorMaterial>();
+	List<WeaponType> weaponType = new ArrayList<WeaponType>();
+	List<Ability> skills = new ArrayList<Ability>();
 	Statblock stats;
 	
 	public EntityClassEnum getName() {

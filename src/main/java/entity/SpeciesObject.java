@@ -14,7 +14,7 @@ public class SpeciesObject {
 	String name;
 	String description;
 	int numOfHands;
-	Statblock stats;
+	Statblock stats = new Statblock();
 	
 	public String getName() {
 		return name;

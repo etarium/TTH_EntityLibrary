@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -14,8 +15,8 @@ public class EnemyEntity extends Entity{
 	String battleCry;
 	String victoryCry;
 	String loserCry;
-	List<Item> loot;
-	List<Ability> skills;
+	List<Item> loot = new ArrayList<Item>();
+	List<Ability> skills = new ArrayList<Ability>();
 	int numOfHands;
 	int xp;
 	

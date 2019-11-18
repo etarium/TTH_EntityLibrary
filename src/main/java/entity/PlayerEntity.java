@@ -16,7 +16,7 @@ import items.enums.WeaponType;
 
 public class PlayerEntity extends Entity{
 	
-	EntityClassObject entityClass;
+	EntityClassObject entityClass = new EntityClassObject();
 	SpeciesObject speciesObject = new SpeciesObject();
 	int numOfHands;
 	List<ArmorMaterial> armorType = new ArrayList<ArmorMaterial>();
@@ -29,7 +29,7 @@ public class PlayerEntity extends Entity{
 	int xp;
 	int xpToNextLevel;
 	Location location;
-	public Cell currentCell;
+	public Cell currentCell = new Cell();
 	public boolean isInEncounter = false;
 	
 	
