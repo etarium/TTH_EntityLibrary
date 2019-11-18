@@ -1,5 +1,6 @@
 package general;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import entity.Entity;
@@ -12,9 +13,9 @@ public class Quest {
 	String _id;
 	String name;
 	String description;
-	List<Item> questItems;
-	List<Item> questRewards;
-	List<Entity> questEntities;
+	List<Item> questItems = new ArrayList<Item>();
+	List<Item> questRewards = new ArrayList<Item>();
+	List<Entity> questEntities = new ArrayList<Entity>();
 	Location coordinatesOfQuest;
 	Location coordinatesOfNPC;
 	String npcDialogueForQuest;

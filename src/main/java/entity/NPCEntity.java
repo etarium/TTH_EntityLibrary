@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import entity.enums.Faction;
@@ -7,7 +8,7 @@ import general.Quest;
 
 public class NPCEntity extends Entity{
 
-	List<Quest> quests;
+	List<Quest> quests = new ArrayList<Quest>();
 	Faction faction;
 	int xpEarned;
 	int xpLost; //should we?
